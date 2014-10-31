@@ -35,6 +35,7 @@
 /Users/maneeshmadan/Abhi/oodlesTraining/CordovaProjects/Table_View/platforms/android/assets/www/img \
 /Users/maneeshmadan/Abhi/oodlesTraining/CordovaProjects/Table_View/platforms/android/assets/www/index.html \
 /Users/maneeshmadan/Abhi/oodlesTraining/CordovaProjects/Table_View/platforms/android/assets/www/js \
+/Users/maneeshmadan/Abhi/oodlesTraining/CordovaProjects/Table_View/platforms/android/assets/www/plugins \
 /Users/maneeshmadan/Abhi/oodlesTraining/CordovaProjects/Table_View/platforms/android/assets/www/css/index.css \
 /Users/maneeshmadan/Abhi/oodlesTraining/CordovaProjects/Table_View/platforms/android/assets/www/img/logo.png \
 /Users/maneeshmadan/Abhi/oodlesTraining/CordovaProjects/Table_View/platforms/android/assets/www/js/index.js \
