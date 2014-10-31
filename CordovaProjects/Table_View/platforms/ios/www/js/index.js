@@ -34,6 +34,7 @@ function startapp(){
 		
 	
 	var ourDiv= document.getElementById("dynamicTable");
+	ourDiv.innerHTML=null;
 	var tab=document.createElement("table");
     
 	var tblBody = document.createElement("tbody");
@@ -53,7 +54,7 @@ function startapp(){
             
 		}
 		tblBody.appendChild(tr);
-        console.log("HERE");
+       
 	}
 	tab.appendChild(tblBody);
 	
@@ -61,4 +62,18 @@ function startapp(){
     console.log("HTML  "+ourDiv);
 	tab.setAttribute("border","2");
 	alert("table created")	;
+}
+function formValidation(evt){
+		
+		
+		console.log("here");
+
+		var code=(evt.which) ? evt.which : evt.keyCode;
+		
+		if (code<48 || code>57)
+			{ 				alert("Enter numeric values");
+			return false;
+			}
+		
+return true;
 }

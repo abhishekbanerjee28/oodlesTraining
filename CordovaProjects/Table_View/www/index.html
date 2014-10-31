@@ -11,11 +11,14 @@
         <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
-       No. of Rows: <input type="text" id="row" > <br/>
-       No. of columns: <input type="text" id="col"> <br/>
-      	<input type="button" value="Create Table" onclick="startapp()">
+    	<form name="tablegenerate">
+       No. of Rows: <input type="text" id="row" onkeypress="return formValidation(event)" > <br/>
+       No. of columns: <input type="text" id="col" onkeypress="return formValidation(event)"> <br/>
+      	<input type="button" value="Create Table" onclick="startapp()"> 
+      	</form>
     </body>
     <div id="dynamicTable">
     	
     </div>
+    
 </html>
