@@ -39,5 +39,5 @@ function myFunction(val)
 	 	else 
 	 	cross="X";
 	
-	alert(val+ " is clicked");
+	
 }
