@@ -46,10 +46,8 @@ function startapp(){
 		for (var j=0;j<cl;j++) {
 		
 		
-		td=document.createElement("td");
-            
-		td.innerHTML="table content";
-            
+		td=document.createElement("td");   
+        td.innerHTML=' r-  ' + (i+1) +  ' col-  '+   (j+1) ;   
 		tr.appendChild(td);
             
 		}
