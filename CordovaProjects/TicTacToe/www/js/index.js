@@ -48,7 +48,7 @@ var app = {
 		};
 
 		document.getElementById("reset").onclick = function() {
-			alert("reset clicked");
+			// alert("reset clicked");
 			myReset();
 		};
 	},
