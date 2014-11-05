@@ -25,6 +25,17 @@ function createDivision() {
 	}
 	
 	else{
+		var parent = document.getElementsByTagName("body")[0];
+		var child1 = document.getElementById("div1");
+		var child2 = document.getElementById("div2");
+		var child3 = document.getElementById("div3");
+		var child4 = document.getElementById("div4");
+		if(child1 != null){
+			parent.removeChild(child1);
+			parent.removeChild(child2);
+			parent.removeChild(child3);
+			parent.removeChild(child4);	
+		}
 		document.getElementById("inputText").style.borderColor="";
 		document.getElementById("inputColor").style.borderColor="";
 
@@ -33,8 +44,8 @@ function createDivision() {
 // Creating 1st Dynamic Divsion
 	var divElement1 = document.createElement("div");  
  	divElement1.id = "div1";
- 	divElement1.style.height="30%";
- 	divElement1.style.width="30%";
+ 	divElement1.style.height="25%";
+ 	divElement1.style.width="25%";
  	divElement1.style.background= "#FFFFFF";
  	divElement1.style.cssFloat= "left";
  	divElement1.style.border= "1px solid";
@@ -59,8 +70,8 @@ function createDivision() {
 // Creating 2nd Dynamic Divsion
 	var divElement2 = document.createElement("div");  
  	divElement2.id = "div2"; 
- 	divElement2.style.height="30%";
- 	divElement2.style.width="30%";
+ 	divElement2.style.height="25%";
+ 	divElement2.style.width="25%";
  	divElement2.style.background= "#FFFFFF";
  	divElement2.style.cssFloat= "right";
  	divElement2.style.border= "1px solid";
@@ -82,10 +93,12 @@ function createDivision() {
 // Creating 3rd Dynamic Divsion
 	var divElement3 = document.createElement("div");  
 	divElement3.id = "div3";
-	divElement3.style.height="30%";
- 	divElement3.style.width="30%";
+	divElement3.style.height="25%";
+ 	divElement3.style.width="25%";
 	divElement3.style.background= "#FFFFFF";
- 	divElement3.style.cssFloat= "left";
+	divElement3.style.position = "absolute";
+ 	divElement3.style.bottom = 0;
+ 	divElement3.style.left = 0;
  	divElement3.style.border= "1px solid";
 	divElement3.style.borderBottomLeftRadius = "2em";
 	divElement3.style.marginTop="50px";
@@ -105,10 +118,12 @@ function createDivision() {
 // Creating 4th Dynamic Divsion
  	var divElement4 = document.createElement("div");  
  	divElement4.id = "div4";  
- 	divElement4.style.height="30%";
- 	divElement4.style.width="30%";
+ 	divElement4.style.height="25%";
+ 	divElement4.style.width="25%";
  	divElement4.style.background= "#FFFFFF";
- 	divElement4.style.cssFloat= "right";
+ 	divElement4.style.position = "absolute";
+ 	divElement4.style.bottom = 0;
+ 	divElement4.style.right = 0;
  	divElement4.style.border= "1px solid";
  	divElement4.style.borderBottomRightRadius = "2em";
  	divElement4.style.marginTop="50px";
