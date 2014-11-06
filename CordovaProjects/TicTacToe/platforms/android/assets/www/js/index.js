@@ -48,7 +48,7 @@ var app = {
 		};
 
 		document.getElementById("reset").onclick = function() {
-			alert("reset clicked");
+			// alert("reset clicked");
 			myReset();
 		};
 	},
@@ -185,6 +185,16 @@ function myReset() {
 	document.getElementById("button7").value = "";
 	document.getElementById("button8").value = "";
 	document.getElementById("button9").value = "";
+	flagB1 = false;
+	flagB2 = false;
+	flagB3 = false;
+	flagB4 = false;
+	flagB5 = false;
+ 	flagB6 = false;
+	flagB7 = false;
+	flagB8 = false;
+	flagB9 = false;
+
 
 }
 
