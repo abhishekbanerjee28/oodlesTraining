@@ -1,0 +1,30 @@
+[
+    {
+        "id": "Tab1",
+        "heading": "This is Tab 1",
+        "title": "Tab Panel 1",
+        "name": "TabPan1",
+        "html": "This is an Example of Tab Panel using AJAX"
+    },
+    {
+        "id": "Tab2",
+        "heading": "This is Tab 2",
+        "title": "Tab Panel 2",
+        "name": "TabPan2",
+        "html": "This is an Example of Tab Panel using AJAX"
+    },
+    {
+        "id": "Tab3",
+        "name": "TabPan3",
+        "heading": "This is Tab 3",
+        "title": "Tab Panel 3",
+        "html": "This is an Example of Tab Panel using AJAX"
+    },
+    {
+        "id": "Tab4",
+        "name": "TabPan4",
+        "heading": "This is Tab 4",
+        "title": "Tab Panel 4",
+        "html": "This tab is created for nitin"
+    }
+]
