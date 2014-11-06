@@ -1,0 +1,32 @@
+/* #tabFrame{
+	position; relative
+	width: 90%;
+	 border: 1px solid;
+	
+}
+
+#tabMenu{
+	position: relative;
+	z-index: 4;
+}
+*/
+#firstTab, #secondTab , #thirdTab{
+	
+   border: 2px solid ;
+   margin: 0px 0px 0px 12px;  
+   border-bottom: 3px orange; */
+   padding: 0px 10px 0px 10px;
+   
+}
+.TabPane{
+	position: absolute ;
+	height: 200px;
+	width: 1400px;
+	border: 1px solid orange;
+	z-index: 1;
+	background:  orange;
+	margin-top:-1px;
+}
+
+
+
