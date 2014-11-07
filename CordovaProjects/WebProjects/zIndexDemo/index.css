@@ -1,0 +1,39 @@
+#span1,#span2,#span3,#span4{
+	position: fixed; 
+	color: white;
+	width: 100px;
+	height: 100px;
+	line-height:100px;
+	
+    
+     
+   margin: auto;
+   text-align: center;
+   
+   
+}
+#span1{
+	z-index: 1;
+	margin-left:100px;
+	margin-top: 100px;
+	
+	
+	
+	
+}
+#span2{
+	margin-left:150px;
+	z-index: 3 ;
+	margin-top: 150px;
+	display: table-cell;
+}
+#span3{
+	margin-left:200px;
+	z-index: 2;
+	margin-top: 200px;
+}
+#span4{
+	margin-left:250px;
+	z-index: 4;
+	margin-top: 250px;
+}
