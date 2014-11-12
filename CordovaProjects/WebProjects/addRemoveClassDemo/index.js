@@ -3,12 +3,12 @@ $(document).ready(function(){
 	var menuItems= ["Home","About Us","Services", "Contact Us"];
  	var myList= $('<ul> </ul>');
  	myList.addClass('uiList');
- 	myList.css("list-style-type", "none");
+ 	myList.css({"list-style-type": "none"});
  	var li;
  	var ind;
  	$.each(menuItems,function(i,val){
  		li= $('<li></li>');
- 		li.css ({ "float":"left", "padding": "0px 10px", "line-height" : "50px" , "border":"1px solid","background-color": "#ADD8E6" });
+ 		li.css ({ "float":"left", "padding": "0px 10px", "line-height" : "50px" , "border":"1px solid","background-color": "#ADD8E6", "width":"300px"});
  		li.addClass('uiItem');
  		//li.text(menuItems[i]);
  		li.text(val);
