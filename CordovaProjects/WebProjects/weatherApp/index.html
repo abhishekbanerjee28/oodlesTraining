@@ -18,6 +18,7 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 		<link rel="stylesheet" href="jquery.mobile-1.4.4.min.css">
+		<link rel="stylesheet" href="index.css">
 
 		<script type="text/javascript" src="jquery_min.js"></script>
 		<script type="text/javascript" src="jquery.mobile-1.4.4.min.js"></script>
@@ -29,37 +30,44 @@
 	<body>
 
 		<div data-role="page" id="LeadingPage">
+
 			<div role="main" class="ui-content">
 				<div data-role="fieldcontain">
-					<!--
-					<select  id="countries">
-					<option value= "default" >Country</option>
-					<option value="country1" >INDIA</option>
-					<option value="country2">USA</option>
-					<option value="country3">UK</option>
-					<option value="country4" >AUSTRALIA</option>
-					</select>
-					</div>
-					<div data-role="fieldcontain" id="secondDiv">
 
+					<div class="ui-grid-a">
+						<select id="country" name ="country"> </select>
+						<select name ="state" id ="state"> </select>
+						<script >
+							populateCountries("country", "state");
+						</script>
+						<label for="city">Enter City:</label>
+						<input type="text"  id="city"  />
+						<input type="submit"  id="submit" value="Submit"   />
+						<input type="reset"  id="reset" value="Reset"   />
+						
 					</div>
-					-->
 					
+					<div class="ui-grid-b">
+						
+						<br/>
+						<label for="temp">Current Temperature:</label>
+						<label id="temp" > </label>
+						<label for="localTime">Current Time:</label>
+						<label id="localTime" > </label>
+						<label for="weather">Weather:</label>
+						<label id="weather" > </label>
+						<label for="wind">Wind:</label>
+						<label id="wind" > </label>
+						
+						<label for="humidity">Humidity:</label>
+						<label id="humidity" > </label>
+						
+					</div>
 
-					<select id="country" name ="country"> </select>
-					<select name ="state" id ="state"> </select>
-					<script >
-						populateCountries("country", "state");
-					</script>
-					<label for="basic">Enter City:</label>
-					<input type="text"  id="city"  /> <br/>
-					<label for="basic">Current Temperature is:</label>
-					<input type="text"  id="temp"   /> 
-						<input type="submit"  id="submit" value="submit"   /> 
-					</div>	
 				</div>
-
 			</div>
+
+		</div>
 
 	</body>
 </html>
