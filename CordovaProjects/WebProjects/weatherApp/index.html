@@ -23,23 +23,30 @@
 		<script type="text/javascript" src="jquery_min.js"></script>
 		<script type="text/javascript" src="jquery.mobile-1.4.4.min.js"></script>
 		<script type="text/javascript" src="index.js"></script>
-		<script type= "text/javascript" src = "countries.js"> </script>
+		<script type= "text/javascript" src = "countries.js"></script>
 
 	</head>
 
 	<body>
 
-		<div data-role="page" id="LeadingPage">
+		<div data-role="page" class="pageDiv"id="LeadingPage">
+			<div data-role="header" >
 
-			<div role="main" class="ui-content">
-				<div data-role="fieldcontain">
-					
+				<h1> Weather Forecast </h1>
+
+			</div>
+			<div role="main" class="ui-content mainDiv ">
+
+				<div data-role="fieldcontain fieldDiv" >
+
 					<div id="display">
-
+						<h2> </h2>
+						<div id="imageDiv"> </div>
 						<div data-role="fieldcontain">
+
 							<label for="temp" > Current Temperature:</label>
 							<label id="temp" > </label>
-							<div id="imageDiv"> </div>
+
 						</div>
 
 						<div data-role="fieldcontain">
@@ -72,16 +79,20 @@
 							<input type="text"  id="city"  />
 						</div>
 						<input type="submit"  id="submit" value="Submit"   />
-					
 
 					</div>
-					
+
 				</div>
 				<button id="but">
 					Next 10 days forecast
 				</button>
 				<div class="ui-grid-a" id="gridView"></div>
 
+			</div>
+			<div data-role="footer">
+				<h1> &copy; Copyright  by Abhishek Banerjee </h1>
+				
+					
 			</div>
 
 		</div>
