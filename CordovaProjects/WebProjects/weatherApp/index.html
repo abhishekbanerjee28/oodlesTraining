@@ -33,55 +33,55 @@
 
 			<div role="main" class="ui-content">
 				<div data-role="fieldcontain">
+					
+					<div id="display">
 
+						<div data-role="fieldcontain">
+							<label for="temp" > Current Temperature:</label>
+							<label id="temp" > </label>
+							<div id="imageDiv"> </div>
+						</div>
+
+						<div data-role="fieldcontain">
+							<label for="localTime">Current Time:</label>
+							<label id="localTime" > </label>
+						</div>
+						<div data-role="fieldcontain" id="weather-div">
+							<label for="weather">Weather:</label>
+							<label id="weather" > </label>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="wind">Wind:</label>
+							<label id="wind" > </label>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="humidity">Humidity:</label>
+							<label id="humidity" > </label>
+						</div>
+					</div>
 					<div class="ui-grid-a">
-						<select id="country" name ="country"> </select>
-						<select name ="state" id ="state"> </select>
-						
+						<select id="country" name ="country"></select>
+						<select name ="state" id ="state"></select>
+
 						<script >
 							populateCountries("country", "state");
 						</script>
-						
+
 						<div data-role="fieldcontain">
 							<label for="city">Enter City:</label>
 							<input type="text"  id="city"  />
 						</div>
 						<input type="submit"  id="submit" value="Submit"   />
-						<input type="reset"  id="reset" value="Reset"   />
-						
-					</div>
-				
-					<div data-role="fieldcontain">
-						<label for="temp" >Current Temperature:</label>
-						<label id="temp" > </label>
-						
-					</div>
-					<div id="imageDiv"> </div>
-						
-					<div data-role="fieldcontain">
-						<label for="localTime">Current Time:</label>
-						<label id="localTime" > </label>
-					</div>
-					<div data-role="fieldcontain">
-						<label for="weather">Weather:</label>
-						<label id="weather" > </label>
-					</div>
-					<div data-role="fieldcontain">
-						<label for="wind">Wind:</label>
-						<label id="wind" > </label>
-					</div>
-					<div data-role="fieldcontain" id="last">
-						<label for="humidity">Humidity:</label>
-						<label id="humidity" > </label>
+					
+
 					</div>
 					
-					
-				<!--	<div class="ui-grid-a" id="gridView"> 
-					
-				</div> -->
-					
-					</div>
-					<button id="but"> 10days forecast</button>
+				</div>
+				<button id="but">
+					Next 10 days forecast
+				</button>
+				<div class="ui-grid-a" id="gridView"></div>
+
 			</div>
 
 		</div>
