@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4BE4877F-86D1-4F3C-A2A5-C2A55CB9B75D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Facebook_Authenticate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>48D53A6DC12B61F01F9E99BB2B65514AAFF690CE</key>
+		<string>https://github.com/abhishekbanerjee28/oodlesTraining.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CordovaProjects/FacebookAuthenticate/platforms/ios/Facebook_Authenticate.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>48D53A6DC12B61F01F9E99BB2B65514AAFF690CE</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/abhishekbanerjee28/oodlesTraining.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>48D53A6DC12B61F01F9E99BB2B65514AAFF690CE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>48D53A6DC12B61F01F9E99BB2B65514AAFF690CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>oodlesTraining</string>
+		</dict>
+	</array>
+</dict>
+</plist>

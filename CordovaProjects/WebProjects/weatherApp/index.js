@@ -1,9 +1,9 @@
 $(document).ready(function() {
-
+		var time;
 	setInterval(function() {
-		var time = new Date();
+		 time = new Date();
 		time = time.toLocaleTimeString();
-		$('#localTime').text(time);
+		//$('#localTime').text(time);
 	}, 1000);
 
 	var country, state, city;
@@ -27,12 +27,14 @@ $(document).ready(function() {
 		else {
 
 			if (country == "USA") {
-				$('h2').text(state + "," + country);
+				
 
 				ajaxCall(state, city, function(msg) {
 
 					if (msg.hasOwnProperty('current_observation')) {
-
+						
+						$('#localTime').text(time);
+						$('h2').text(state + "," + country);
 						$('#temp').text(msg ['current_observation']['temperature_string']);
 
 						//alert (msg ['current_observation']['local_time_rfc822'])
@@ -40,10 +42,10 @@ $(document).ready(function() {
 
 						//alert ("weather " + msg ['current_observation']['weather']);
 						if ((msg ['current_observation']['weather']) == "") {
-							alert(123456);
+							
 							$('#weather').hide();
 						} else {
-
+								$('#weather').show();
 							$('#weather').text(msg ['current_observation']['weather']);
 						}
 
@@ -53,23 +55,28 @@ $(document).ready(function() {
 						//alert ("humidity " + msg ['current_observation']['relative_humidity']);
 						$('#humidity').text(msg ['current_observation']['relative_humidity']);
 						var img = msg ['current_observation']['icon_url'];
-
+						
 						$('<div><img src="' + img + '"/></div>').css('width', '100%').appendTo('#imageDiv');
 
 						
 						$('#display').show();
 						$('#but').show();
-					} else
+					}
+					else{
 						alert("Entered city is wrong");
+					}
 
 				});
 			} else {
-				$('h2').text(city + "," + country);
+				
 
 				ajaxCall(country, city, function(msg) {
-
+					
+					$('#localTime').text(time);
 					if (msg.hasOwnProperty('current_observation')) {
-
+					
+						//alert (time);
+						$('h2').text(city + "," + country);
 						$('#temp').text(msg ['current_observation']['temperature_string']);
 
 						//alert (msg ['current_observation']['local_time_rfc822'])
@@ -93,10 +100,10 @@ $(document).ready(function() {
 						$('#humidity').text(msg ['current_observation']['relative_humidity']);
 
 						var img = msg ['current_observation']['icon_url'];
-
 						$('<div><img src="' + img + '"/></div>').css('width', '100%').appendTo('#imageDiv');
 						$('#display').show();
 						$('#but').show();
+						
 
 					} else
 						alert("Entered city is wrong");
@@ -125,10 +132,27 @@ $(document).ready(function() {
 
 	$('#country').on('change', function() {
 
-		var myselect = $("select#country");
+		// var myselect = $("select#country");
 		myselect = $("select#state");
 		myselect[0].selectedIndex = 0;
 		myselect.selectmenu("refresh");
+		$('#city').val("");
+		$('#temp').text("");
+		$("#imageDiv").text("");
+
+		$('#localTime').text("");
+
+		$('#weather').text("");
+
+		$('#wind').text("");
+
+		$('#humidity').text("");
+		$('#imageDiv img').remove();
+
+	});
+	$('#state').on('change', function() {
+
+		
 		$('#city').val("");
 		$('#temp').text("");
 		$("#imageDiv").text("");
@@ -152,6 +176,8 @@ $(document).ready(function() {
 		if (country == "USA") {
 
 			foreacast10days(state, city, function(msg) {
+				
+				
 				$('#gridView').show();
 
 				if (msg.hasOwnProperty('forecast')) {
@@ -171,9 +197,11 @@ $(document).ready(function() {
 						$('<p> ' + "<b>Avg Humidity: </b>" + humidity + "%" + '</p>').appendTo(newdiv);
 
 					}
-				} else
+				
+				} 
+				else
 					alert("Entered city is wrong");
-
+				
 			});
 		} else {
 
@@ -188,14 +216,16 @@ $(document).ready(function() {
 						var img = msg.forecast.simpleforecast.forecastday[i].icon_url;
 						var humidity = msg.forecast.simpleforecast.forecastday[i].avehumidity;
 						var condition = msg.forecast.simpleforecast.forecastday[i].conditions;
-
+						var high= msg.forecast.simpleforecast.forecastday[i].high.celsius;
+						var low= msg.forecast.simpleforecast.forecastday[i].low.celsius;
 						var newdiv = $('<div> </div>').css("background-color", "#7DFDFE").appendTo('#gridView');
 						$('<p> <h3>' + city + "," + state + '</h3></p>').appendTo(newdiv);
 						$('<p> <h4>' + date + '</h4></p>').appendTo(newdiv);
 						$('<img src="' + img + '"/>').appendTo(newdiv);
 						$('<p> ' + condition + '</p>').appendTo(newdiv);
 						$('<p> ' + "<b>Avg Humidity: </b>" + humidity + "%" + '</p>').appendTo(newdiv);
-
+						$('<p> <h4>' + date + '</h4></p>').appendTo(newdiv);
+						$('<p><b> Temp:</b> ' + high + "&deg;C (high) " + low + "&deg;C (low)"+ '</p>').appendTo(newdiv);
 					}
 
 				} else
