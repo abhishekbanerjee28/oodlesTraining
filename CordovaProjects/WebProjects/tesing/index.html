@@ -16,55 +16,20 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="lib/jquery.mobile-1.4.4.min.js"></script>
+		<script type="text/javascript" src="lib/jquery_plugin.js"></script>
 		<script type="text/javascript" src="index.js"></script>
 	</head>
 
 	<body>
-	<!--	<div id="checkBoxes">
-			What would you like to have : 
-		<input type= "checkbox" value="Pepsi" checked="true"> Pepsi 
-		<input type= "checkbox" value="Coke"> Coke
-		</div>
-		
 		<div>
-			<button value="Login" id="loginFb"> Login With Facebook </button>
-		</div> -->
-		
-		<script>
-			window.fbAsyncInit = function() {
-				FB.init({
-					appId : '1498490983755153',
-					xfbml : true,
-					version : 'v2.1'
-				});
-			}; ( function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) {
-						return;
-					}
-					js = d.createElement(s);
-					js.id = id;
-					js.src = "//connect.facebook.net/en_US/sdk.js";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-		</script>
-		
-		<button id="loginFb">
-			Login with Facebook
-		</button>
-		<div
-		class="fb-like"
-		data-send="true"
-		data-width="450"
-		data-show-faces="true">
+			<button id="allMatches" style="margin-left: 50%">
+				All Matches
+				
+			</button>
+			<div id="displaytable"  style="text-align: center;margin-left: 45%;margin-top: 1%" > </div>
 		</div>
-
-		<script>
-			window.onerror = null;
-			window.onerror = function(errorMsg, url, lineNumber) {
-				alert("error message" + errorMsg + "    /On url    " + url + "    / Line     " + lineNumber);
-				console.log("error message" + errorMsg + "    /On url    " + url + "    / Line     " + lineNumber);
-			};
-		</script>
+		
 	</body>
 </html>

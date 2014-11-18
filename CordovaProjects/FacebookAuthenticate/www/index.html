@@ -38,18 +38,18 @@ under the License.
     {
      if (response.status === 'connected') 
     {
-        document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";
+        alert('The status of the session is: ' + response.status);
         //SUCCESS
  
     }    
     else if (response.status === 'not_authorized') 
     {
-        document.getElementById("message").innerHTML +=  "<br>Failed to Connect";
+        alert('The status of the session is: ' + response.status);
  
         //FAILED
     } else 
     {
-        document.getElementById("message").innerHTML +=  "<br>Logged Out";
+       alert('The status of the session is: ' + response.status);
  
         //UNKNOWN ERROR
     }
